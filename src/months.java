@@ -17,34 +17,34 @@ class months
       	System.out.println("the 2 month is february");
       	break; 
       	case 3:
-      	System.out.println("the 3 month is february");
+      	System.out.println("the 3 month is march");
       	break;
       	case 4:
-      	System.out.println("the  4 month is february");
+      	System.out.println("the  4 month is april");
       	break;
         case 5:
-      	System.out.println("the 5 month is february");
+      	System.out.println("the 5 month is may");
       	break;
       	case 6:
-      	System.out.println("the 6 month is february");
+      	System.out.println("the 6 month is june");
       	break;
       	case 7:
-      	System.out.println("the 7 month is february");
+      	System.out.println("the 7 month is july");
       	break;
       	case 8:
-      	System.out.println("the 8 month is february");
+      	System.out.println("the 8 month is august");
       	break;
       	case 9:
-      	System.out.println("the 9 month is february");
+      	System.out.println("the 9 month is september");
       	break;
         case 10:
-      	System.out.println("the 10 month is february");
+      	System.out.println("the 10 month is october");
       	break;
         case 11:
-      	System.out.println("the 11 month is february");
+      	System.out.println("the 11 month is november");
       	break;
         case 12:
-      	System.out.println("the 12 month is february");
+      	System.out.println("the 12 month is december");
       	break;
       	default:
       	System.out.println("invalid input");
