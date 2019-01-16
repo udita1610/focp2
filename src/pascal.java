@@ -4,9 +4,13 @@ class Pascal
 {
     public static void main(String[] args)
     {       
-        System.out.println("Enter the number of rows you want to print :");
+        int rows;
+        boolean ch=false;
         Scanner input = new Scanner(System.in);
-        int rows = input.nextInt();
+        do
+        {
+        System.out.println("Enter the number of rows you want to print :");
+        rows = input.nextInt();
         for(int i = 0; i < rows; i++)
         {
             int number = 1;
@@ -18,5 +22,8 @@ class Pascal
                 }
             System.out.println();
         }
+        System.out.println("ifwant to ry again");
+        ch=true;
+    }while(ch);
     }
 }
