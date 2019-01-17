@@ -6,6 +6,8 @@ class Employee
 	Employee()
 	{
 		this.salary=0;
+		this.fname="";
+		this.lname="";
 	}
 	Employee(String fn , String ln ,double s)
 	{
@@ -37,18 +39,17 @@ class Employeetest
 {
 	public static void main(String arg[])
 	{
-		
 		String fn,ln;
 		double s;
-		for(int i=1;i<=1;i++)
+		for(int i=1;i<=2;i++)
 		{
 			Scanner input = new Scanner(System.in);
 		  System.out.print("enter the first name");
-		  fn=inputnextString();
+		  fn=input.nextLine();
 		System.out.println(fn);
 
 		System.out.print("enter the last name");
-		ln = inputnextString();
+		ln =input.nextLine();
 		System.out.println(ln);
 
 		System.out.print("salary");
@@ -66,10 +67,10 @@ class Employeetest
         Employee ob1=new Employee();
         ob1.yrsal();
         Employee ob2=new Employee();
+
         ob2.yrsal();
-
-
-
+        Employee ob=new Employee();
+        ob.displayinformation();
 
     }
 }
