@@ -38,12 +38,12 @@ class Address
 	}
 }
 
-class Qual
+class Qualification
 {
 	String qualName, university, institute;
 	double cgpa;
 
-	Qual(String q, String u, String i, double cgpa)
+	Qualification(String q, String u, String i, double cgpa)
 	{
 		this.qualName=q;
 		this.university=u;
@@ -108,7 +108,7 @@ class Student
 	Address addr;
 	Date dob;
 	String[] skills;
-	Qual[] qual;
+	Qualification[] qual;
 	Project[] projects;
 
 	Student(String fn, String ln, String em, String cn, String l1, String l2, String c, String s, int p, int d, int m, int y, int x, int v, int b)
@@ -127,7 +127,7 @@ class Student
 	    {
 	    	skills[j]=input.next();
 	    }
-	    qual=new Qual[v];
+	    qual=new Qualification[v];
 	    String q, u, i;
 	    double cgpa;
 	    for(j=0;j<x;j++)
@@ -137,7 +137,7 @@ class Student
 	    	u=input.next();
 	    	i=input.next();
 	    	cgpa=input.nextDouble();
-	    	qual[j]=new Qual(q,u,i,cgpa);
+	    	qual[j]=new Qualification(q,u,i,cgpa);
 	    }
 	    projects= new Project[b];
 	    String n, r;

@@ -22,9 +22,11 @@ class Circledemo
 {
 	public static void main(String arg[])
 	{
-	
-	return display();
+	Circle ob =new Circle();
+	ob.findArea();
+	ob.display();
 
 	}
 	
+
 }
