@@ -1,27 +1,25 @@
 import java.util.*;
-
-
 class Date
 {
-	int day, month, year;
+	int dy, mon,yr;
 
 	Date(int d, int m, int y)
 	{
-		this.day=d;
-	    this.month=m;
-	    this.year=y;
+		this.dy=d;
+	    this.mon=m;
+	    this.yr=y;
 	}
 
 	void DisplayDate()
 	{
-		System.out.print(day+" "+month+" "+year+" ");
+		System.out.print(dy+" "+mon+" "+yr+" ");
 	}
 }
 
 class Address
 {
 	String line1, line2, city, state;
-	int pinCode;
+	int pc;
 
 	Address(String l1, String l2, String c, String s, int p)
 	{
@@ -29,12 +27,12 @@ class Address
 		this.line2=l2;
 		this.city=c;
 		this.state=s;
-		this.pinCode=p;
+		this.pc=p;
 	}
 
 	void DisplayAddress()
 	{
-		System.out.print(line1+" "+line2+" "+city+" "+state+" "+pinCode+" ");
+		System.out.print(line1+" "+line2+" "+city+" "+state+" "+pc+" ");
 	}
 }
 
@@ -68,14 +66,14 @@ class Project
 	{
 		int i;
 		Scanner input = new Scanner(System.in);
-	this.name=n;
-	this.role=r;
-	startDate= new Date(ds,ms,ys);
-	endDate= new Date(dl,ml,yl);
-	this.z=z;	
-	this.responsibilities=new String[z];
-	System.out.println("enter responsibilities");
-	for(i=0;i<z;i++)
+	    this.name=n;
+	    this.role=r;
+	    startDate= new Date(ds,ms,ys);
+	    endDate= new Date(dl,ml,yl);
+	    this.z=z;	
+	    this.responsibilities=new String[z];
+	    System.out.println("enter responsibilities");
+	    for(i=0;i<z;i++)
 	{
 		this.responsibilities[i]=input.next();
 	}
@@ -145,7 +143,7 @@ class Student
 	    int ds, ms, ys, dl, ml, yl, z;
 	    for(j=0;j<b;j++)
 	    {
-	    	System.out.println("enter name, role, no. of responsibilities, startday, startmonth, startyear, finishday, finishmonth, finishyear of project number "+(j+1));
+	    	System.out.println("enter name, role, no. of responsibilities, startdy, startmon, startyear, finishdy, finishmon, finishyear of project number "+(j+1));
 	    	n=input.next();
 	    	r=input.next();
 	    	z=input.nextInt();
@@ -193,9 +191,9 @@ class Assignment1
 		Student[] student = new Student[n];
 		for (i=0;i<n;i++)
 		{
-			System.out.println("Enter fname");
+			System.out.println("Enter firstname");
 			fn=input.next();
-			System.out.println("Enter lname");
+			System.out.println("Enter lastname");
 			ln=input.next();
 			System.out.println("Enter email");
 			em=input.next();
@@ -209,7 +207,7 @@ class Assignment1
 			c=input.next();
 			System.out.println("Enter state");
 			s=input.next();
-			System.out.println("Enter pincode");
+			System.out.println("Enterpc");
 			p=input.nextInt();
 			System.out.println("Enter date");
 			d=input.nextInt();
