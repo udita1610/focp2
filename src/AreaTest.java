@@ -30,7 +30,7 @@ class Circle implements GeometricObjects
 }
 class ResizableCircle extends Circle implements Resizable
 {
-  // double radius;
+  double radius;
    ResizableCircle(double radius)
    {
    	//this.radius=r;
