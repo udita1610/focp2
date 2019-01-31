@@ -4,14 +4,11 @@ class Try3
 	public static void main(String arg[])
 	{
 		Scanner input=new Scanner(System.in);
-		int n,m, num;
-		//System.out.println("enter the value of n and m: ");
-		//n=input.nextInt();
-		//m=input.nextInt();
+		 num;
+		                                                                                   
 		try
 		{
-			//num=n/m;
-			//int array[5]=new int[5];
+			];
 			 int a[]=new int[10];
             //Array has only 10 elements
               a[11] = 9;
@@ -21,8 +18,6 @@ class Try3
 
 	           String str=null;
 		      System.out.println (str.length());
-
-
 		}
 		catch(ArithmeticException e)
 		{
